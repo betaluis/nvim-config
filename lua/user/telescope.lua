@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 local actions = require "telescope.actions"
+telescope.load_extension('media_files')
 
 telescope.setup {
   defaults = {
@@ -88,5 +89,11 @@ telescope.setup {
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
   },
+  extensions = {
+    media_files = {
+      filetypes = {"png", "webp", "jpg", "jpeg", "svg"},
+      find_cmd = "rg"
+    }
+  }
 }
 

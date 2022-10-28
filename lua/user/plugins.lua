@@ -42,6 +42,7 @@ packer.init({
 return packer.startup(function(use)
 	-- My plugins here
 	use({ "wbthomason/packer.nvim", commit = "e4c2afb37d31e99b399425e102c58b091fbc16be" }) -- Have packer manage itself
+	use({ "nvim-lua/popup.nvim", commit = "" }) 
 	use({ "nvim-lua/plenary.nvim", commit = "986ad71ae930c7d96e812734540511b4ca838aa2" }) -- Useful lua functions used ny lots of plugins
 	use({ "windwp/nvim-autopairs", commit = "972a7977e759733dd6721af7bcda7a67e40c010e" }) -- Autopairs, integrates with both cmp and treesitter
 	use({ "numToStr/Comment.nvim", commit = "7c49fb2ac01a9f03410100c8e78f647bbea857e8" })
@@ -58,8 +59,14 @@ return packer.startup(function(use)
 	use({ "goolord/alpha-nvim", commit = "417e756951cb0395f080f2c0eda84c8aadcbb80e" })
 	use({ "famiu/bufdelete.nvim", commit = "46255e4a76c4fb450a94885527f5e58a7d96983c" })
 
+  -- Smooth Scroll
+	use({ "karb94/neoscroll.nvim", commit = "" })
+
 	-- Colorschemes
 	use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
+	use({ "EdenEast/nightfox.nvim", commit = "" })
+	use({ "projekt0n/github-nvim-theme", commit = "" })
+	use({ "shaunsingh/nord.nvim", commit = "" })
 	use({ "lunarvim/darkplus.nvim", commit = "" })
 
 	-- cmp plugins
@@ -82,6 +89,7 @@ return packer.startup(function(use)
 
 	-- Telescope
 	use({ "nvim-telescope/telescope.nvim", commit = "b79cd6c88b3d96b0f49cb7d240807cd59b610cd8" })
+	use({ "nvim-telescope/telescope-media-files.nvim", commit = "" })
 
 	-- Treesitter
 	use({

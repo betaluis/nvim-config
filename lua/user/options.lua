@@ -38,7 +38,9 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
-
+  foldlevel = 20,
+  foldmethod = 'expr',
+  foldexpr = 'nvm_treesitter#foldexpr()'
 }
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
