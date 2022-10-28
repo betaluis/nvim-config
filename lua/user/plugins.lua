@@ -59,8 +59,13 @@ return packer.startup(function(use)
 	use({ "goolord/alpha-nvim", commit = "417e756951cb0395f080f2c0eda84c8aadcbb80e" })
 	use({ "famiu/bufdelete.nvim", commit = "46255e4a76c4fb450a94885527f5e58a7d96983c" })
 
+<<<<<<< HEAD
   -- Smooth Scroll
 	use({ "karb94/neoscroll.nvim", commit = "" })
+=======
+  -- Smoot Scrolling
+	use({ "karb94/neoscroll.nvim", commit = "54c5c419f6ee2b35557b3a6a7d631724234ba97a" })
+>>>>>>> 64900c52b45d261a76f03ebb9561d998eed92e51
 
 	-- Colorschemes
 	use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })

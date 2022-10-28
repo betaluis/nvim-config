@@ -5,13 +5,13 @@ end
 
 local parser_configs = require("nvim-treesitter.parsers").get_parser_configs()
 
-parser_configs.markdown = {
-  install_info = {
-    url = "https://github.com/ikatyang/tree-sitter-markdown",
-    files = { "src/parser.c", "src/scanner.cc" },
-  },
-  fyletype = "markdown",
-}
+-- parser_configs.markdown = {
+--   install_info = {
+--     url = "https://github.com/ikatyang/tree-sitter-markdown",
+--     files = { "src/parser.c", "src/scanner.cc" },
+--   },
+--   fyletype = "markdown",
+-- }
 
 configs.setup({
 	ensure_installed = "all", -- one of "all" or a list of languages

@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64900c52b45d261a76f03ebb9561d998eed92e51
 local status_ok, neoscroll = pcall(require, "neoscroll")
 if not status_ok then
   return
 end
 
+<<<<<<< HEAD
 neoscroll.setup({
     -- All these keys will be mapped to their corresponding default scrolling animation
     mappings = {'<C-u>', '<C-d>', '<C-b>', '<C-f>',
@@ -16,3 +21,19 @@ neoscroll.setup({
     post_hook = nil,             -- Function to run after the scrolling animation ends
     performance_mode = false,    -- Disable "Performance Mode" on all buffers.
 })
+=======
+neoscroll.setup {
+  options = {
+    mappings = { '<C-u>', '<C-d>', '<C-b>', '<C-f>',  '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
+    hide_cursor = true,
+    stop_eof = true,
+    respect_scrolloff = false,
+    cursor_scrolls_alone = true,
+    easing_function = nil,
+    pre_hook = nil,
+    post_hook = nil,
+    performance_mode = false,
+  }
+}
+
+>>>>>>> 64900c52b45d261a76f03ebb9561d998eed92e51
